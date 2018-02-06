@@ -1,0 +1,48 @@
+﻿
+<div class="container">
+    <div class="navbar-header">
+        @{
+            string email = "Guest";
+            if (string.IsNullOrEmpty(User.Identity.Name) == false)
+            {
+                email = User.Identity.Name;
+            }
+        }
+        @Html.ActionLink(email, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" });
+    </div>
+    @{
+        if (User.Identity.IsAuthenticated)
+        {
+            <div class="navbar-right">
+                <form class="form-inline">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            @Html.ActionLink("Wallet", "Index", "Wallet", new { area = "" }, new { @class = "navbar-brand" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Market", "Index", "Market", new { area = "" }, new { @class = "navbar-brand" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Account", "Index", "Account", new { area = "" }, new { @class = "navbar-brand" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Logout", "Logout", "Account", new { area = "" }, new {  })
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        }
+        else
+        {
+            <div class="navbar-right">
+                <form class="form-inline">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="navbar-brand " onclick="$('#loginDialog').dialog('open')" href="#">Login</a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        }
+    }
+</div>

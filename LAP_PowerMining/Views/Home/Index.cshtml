@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+<hr />
+<div class="row">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-4">
+        <a class="btn btn-success btn-block " onclick="$('#loginDialog').dialog('open')"><i class="glyphicon glyphicon-log-in"></i>Login</a>
+    </div>
+    <div class="col-md-1">
+    </div>
+
+    <div class="col-md-4">
+        <a class="btn btn-success btn-block " onclick="$('#registerDialog').dialog('open')"><i class="glyphicon glyphicon-log-in"></i>Register</a>
+    </div>
+</div>
+<div id="registerContainer">
+    @Html.Partial("_RegisterDialog")
+</div>
+<div id="loginContainer">
+    @Html.Partial("_LoginDialog")
+</div>
+<script>
+    $(document).ready(function () {
+
+        buildLoginDialog();
+        buildRegisterDialog();
+
+        function buildRegisterDialog() {
+            $("#registerDialog").dialog({
+                minHeight: 300,
+                minWidth: 500,
+                modal: true,
+                resizable: false,
+                autoOpen: false,
+                buttons: [
+                    {
+                        text: "Login",
+                        icon: "ui-icon-gear",
+                        click: function () {
+                            $(this).dialog("close");
+                            $('#loginDialog').dialog('open')
+                        }
+                    }
+                ],
+                show: { effect: 'fade', duration: 100 }
+            });
+        }
+        function buildLoginDialog() {
+            $("#loginDialog").dialog({
+                minHeight: 300,
+                minWidth: 500,
+                resizable: false,
+                modal: true,
+                autoOpen: false,
+                buttons: [
+                    {
+                        text: "Register",
+                        icon: "ui-icon-gear",
+                        click: function () {
+                            $(this).dialog("close");
+                            $('#registerDialog').dialog('open')
+                        }
+                    }
+                ],
+                show: { effect: 'fade', duration: 100 }
+            });
+        }
+
+        $("loginDialog").one("change", function () {
+            buildLoginDialog();
+        });
+
+        $("registerDialog").one("change", function () {
+            buildRegisterDialog();
+        });
+    });
+</script>

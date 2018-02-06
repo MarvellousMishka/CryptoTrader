@@ -1,0 +1,71 @@
+﻿@model LAP_PowerMining.Models.ViewModels.Account.VMLogin
+
+@if (ViewBag.LoggedIn != null && ViewBag.LoggedIn == true)
+{
+    ViewBag.LoggedIn = null;
+    <script>
+        $(document).ready(function () {
+            location.reload(true);
+        });
+    </script>
+}
+else
+{
+    <h2>Login</h2>
+    <form id="loginForm" method="post" novalidate="novalidate">
+                @Html.AntiForgeryToken()
+                <div class="text-danger">
+                    <strong>
+                        @ViewBag.ErrorMessage
+                    </strong>
+                </div>
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new {@id="loginEmail", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new {  @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @id = "loginPassword", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button onclick="submitLogin()" class="btn btn-success">
+                Login
+            </button>
+        </div>
+    </div>
+}
+<script>
+    function submitLogin() {
+        $.ajax({
+            type: 'post',
+            url: 'Account/Login',
+            data: {
+                Password: $('#loginPassword').val(),
+                Email: $('#loginEmail').val()
+            },
+            success: function (data) {
+                $('#loader').dialog('close');
+                $('#loginDialog').html('');
+                $('#loginDialog').html(data);
+            },
+            error: function (data) {
+                $('#loader').dialog('close');
+            },
+            beforeSend: function (xhr) {
+                $('#loader').dialog('open');
+            }
+        });
+    }
+</script>

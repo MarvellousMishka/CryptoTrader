@@ -1,0 +1,146 @@
+﻿@model LAP_PowerMining.Models.ViewModels.Account.VMAddress
+
+<h2>Address</h2>
+<form id="addressForm" method="post" novalidate="novalidate">
+    @Html.AntiForgeryToken()
+    <div class="text-danger">
+        <strong>
+            @ViewBag.ErrorMessage
+        </strong>
+    </div>
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Street, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Street, new { htmlAttributes = new { @id = "Street", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Street, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Numbers, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Numbers, new { htmlAttributes = new { @id = "Numbers", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Numbers, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Zip, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Zip, new { htmlAttributes = new { @id = "Zip", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Zip, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CityName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CityName, new { htmlAttributes = new { @id = "CityName", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CityName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CountryIso, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CountryIso, new { htmlAttributes = new { @id = "CountryIso", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CountryIso, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CountryName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CountryName, new { htmlAttributes = new { @id = "CountryName", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CountryName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+</form>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <button onclick="submitAddress()" class="btn btn-success">
+            Submit
+        </button>
+    </div>
+    <div class="text-info">
+        <strong>
+            @ViewBag.AddressMessage
+        </strong>
+    </div>
+</div>
+
+<script>
+    function submitAddress() {
+        $.ajax({
+            type: 'post',
+            url: '/Account/EditAddress',
+            data: {
+                Street: $('#Street').val(),
+                Numbers: $('#Numbers').val(),
+                Zip: $('#Zip').val(),                
+                CityName: $('#CityName').val(),
+                CountryIso: $('#CountryIso').val(),
+                CountryName: $('#CountryName').val()
+            },
+            success: function (data) {
+                $('#loader').dialog('close');
+                $('#addressContainer').html('');
+                $('#addressContainer').html(data);
+            },
+            error: function (data) {
+                console.log(data);
+                $('#loader').dialog('close');
+            },
+            beforeSend: function (xhr) {
+                $('#loader').dialog('open');
+            }
+        });
+    }
+    $(document).ready(function () {
+        $("#CityName").autocomplete({
+            select: function (e, data) {
+                var dataItem = data.item.value;
+                console.log("citysearch" + dataItem);
+            },
+            source: function (request, response) {
+                $.ajax({
+                    url: "/Account/AutoCompleteCities",
+                    type: "POST",
+                    dataType: "json",
+                    data: { searchTerm: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                'label': item.CityName,
+                                'value': item.CityiId
+                            };
+                        }))
+                    }
+                })
+            },
+            messages: { noResults: "", results: "" }
+        });
+        $("#CountryName").autocomplete({
+            select: function (e, data) {
+                var dataItem = data.item.value;
+                console.log("CountryName" + dataItem);
+            },
+            source: function (request, response) {
+                $.ajax({
+                    url: "/Account/AutoCompleteCountries",
+                    type: "POST",
+                    dataType: "json",
+                    data: { searchTerm: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return {
+                                'label': item.CountryName,
+                                'value': item.CountryiId
+                            };
+                        }))
+                    }
+                })
+            },
+            messages: { noResults: "", results: "" }
+        });
+    });
+</script>

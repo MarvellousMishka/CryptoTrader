@@ -1,0 +1,174 @@
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\ApplicationInsights.config
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csc.exe
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csc.exe.config
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csc.rsp
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csi.exe
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csi.rsp
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.AppContext.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.Collections.Immutable.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.IO.FileSystem.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.Reflection.Metadata.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\vbc.exe
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\vbc.exe.config
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\vbc.rsp
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\VBCSCompiler.exe
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\roslyn\VBCSCompiler.exe.config
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\LAP_PowerMining.dll.config
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\LAP_PowerMining.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\LAP_PowerMining.pdb
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Antlr3.Runtime.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\EntityFramework.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\EntityFramework.SqlServer.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.Agent.Intercept.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.DependencyCollector.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.Web.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.WindowsServer.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.ApplicationInsights.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.Web.Infrastructure.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Newtonsoft.Json.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Helpers.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Mvc.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Optimization.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Razor.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.Deployment.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.Razor.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\WebGrease.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\EntityFramework.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\EntityFramework.SqlServer.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Helpers.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Mvc.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Optimization.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Razor.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.Deployment.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.Razor.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Antlr3.Runtime.pdb
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Newtonsoft.Json.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.ApplicationInsights.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.DependencyCollector.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.WindowsServer.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.Web.xml
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\EntityFramework.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\EntityFramework.SqlServer.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.Helpers.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.Mvc.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.Optimization.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.Razor.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.WebPages.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.WebPages.Deployment.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.WebPages.Razor.resources.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.dll
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.pdb
+D:\micha\Documents\Projekte2017\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.csprojResolveAssemblyReference.cache
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.Core.Resources.Global.resources
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.Core.Resources.Global.De.resources
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.csproj.GenerateResource.Cache
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\ApplicationInsights.config
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csc.exe
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csc.exe.config
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csc.rsp
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csi.exe
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\csi.rsp
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.AppContext.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.Collections.Immutable.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.IO.FileSystem.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\System.Reflection.Metadata.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\vbc.exe
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\vbc.exe.config
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\vbc.rsp
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\VBCSCompiler.exe
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\roslyn\VBCSCompiler.exe.config
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\LAP_PowerMining.dll.config
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\LAP_PowerMining.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\LAP_PowerMining.pdb
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\De\LAP_PowerMining.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Antlr3.Runtime.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\EntityFramework.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\EntityFramework.SqlServer.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.Agent.Intercept.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.DependencyCollector.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.Web.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.WindowsServer.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.ApplicationInsights.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.Web.Infrastructure.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Newtonsoft.Json.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Helpers.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Mvc.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Optimization.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Razor.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.Deployment.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.Razor.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\WebGrease.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\EntityFramework.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\EntityFramework.SqlServer.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Helpers.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Mvc.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Optimization.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.Razor.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.Deployment.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\System.Web.WebPages.Razor.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Antlr3.Runtime.pdb
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Newtonsoft.Json.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.ApplicationInsights.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.DependencyCollector.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.WindowsServer.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Microsoft.AI.Web.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\EntityFramework.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\EntityFramework.SqlServer.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.Helpers.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.Mvc.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.Optimization.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.Razor.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.WebPages.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.WebPages.Deployment.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\de\System.Web.WebPages.Razor.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\obj\Debug\De\LAP_PowerMining.resources.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.pdb
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\obj\Debug\LAP_PowerMining.csprojResolveAssemblyReference.cache
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Chart.Mvc.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Chart.Mvc.pdb
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Chart.Mvc.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Jayrock.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\Jayrock.Json.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\KrakenClient.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\RateGate.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\KrakenClient.pdb
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\LAP_PowerMining\bin\RateGate.xml

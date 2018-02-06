@@ -1,0 +1,74 @@
+﻿@using LAP_PowerMining.Core.Enums
+@using LAP_PowerMining.Core.ToastrComponents
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mishkas ASP.NET-Anwendung</title>
+
+
+    @Styles.Render("~/Content/toastr")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/jquery-ui.css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/bundles/jqueryui")
+    @*@Scripts.Render("~/bundles/chartjs")*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" id="navbarTop">
+        @Html.Partial("_NavbarTop")
+    </div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        if (User.IsInRole(UserRoles.User.ToString()))
+        {
+            <div class="navbar navbar-inverse col-md-offset-1 col-md-10" id="navbarUser">
+                @Html.Partial("_NavbarUser")
+            </div>
+        }
+        else if (User.IsInRole(UserRoles.Admin.ToString()))
+        {
+            <div class="navbar navbar-inverse col-md-offset-1 col-md-10" id="navbarAdmin">
+                @Html.Partial("_NavbarAdmin")
+            </div>
+        }
+    }
+    <div class="container body-content">
+        
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Mishkas ASP.NET-Anwendung</p>
+        </footer>
+    </div>
+    <div id="loader">
+        <img src="~/Content/gifs/ajax-loader.gif" />
+    </div>
+    <script>
+        $('#loader').dialog({
+            height: 150,
+            width: 50,
+            modal: true,
+            dialogClass: "no-close",
+            resizable: false,
+            autoOpen: false,
+            show: { effect: 'fade', duration: 100 }
+        });
+    </script>
+    @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("scripts", required: false)
+
+    @if (ViewData.ContainsKey("Toastr"))
+    {
+        Toastr toastr = ViewData["Toastr"] as Toastr;
+        @ToastrBuilder.ShowToastMessages(toastr);
+    }
+</body>
+</html>

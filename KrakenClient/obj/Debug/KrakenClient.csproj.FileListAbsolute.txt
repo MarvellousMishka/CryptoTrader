@@ -1,0 +1,9 @@
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\bin\Debug\KrakenClient.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\bin\Debug\KrakenClient.pdb
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\bin\Debug\Jayrock.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\bin\Debug\Jayrock.Json.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\bin\Debug\RateGate.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\bin\Debug\RateGate.xml
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\obj\Debug\KrakenClient.dll
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\obj\Debug\KrakenClient.pdb
+D:\micha\Documents\Projekte 2018\LAP_PowerMining\KrakenClient\obj\Debug\KrakenClient.csprojResolveAssemblyReference.cache

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="714d2fa330724b4793771ad023fb25ad" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="LocalDbModel.Address" Width="1.5" PointX="12" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.Balance" Width="1.5" PointX="7.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.BankAccount" Width="1.5" PointX="12.125" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.BankTransferHistory" Width="1.5" PointX="9.875" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.City" Width="1.5" PointX="14.125" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.Country" Width="1.5" PointX="16.375" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.Ticker" Width="1.5" PointX="5.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.TradeHistory" Width="1.5" PointX="7.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.Upload" Width="1.5" PointX="14.125" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LocalDbModel.User" Width="1.5" PointX="9.875" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="LocalDbModel.fk_Address_City" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDbModel.fk_Address_User" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDbModel.fk_Balance_User" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDbModel.fk_BankAccount_User" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDbModel.fk_BankTransferHistory_User" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDbModel.fk_City_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDbModel.fk_TradeHistory_Ticker" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDbModel.fk_TradeHistory_User" ManuallyRouted="false" />
+        <AssociationConnector Association="LocalDbModel.fk_Upload_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
