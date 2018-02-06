@@ -7,6 +7,9 @@
 <h2>Personal Data</h2>
 <div class="row">
     <div class="col-md-6" id="addressContainer">
-        @Html.Partial("_AddressForm")
+        @Html.Action("GetAddress", "Account")
+    </div>
+    <div class="col-md-6" id="userDataContainer">
+        @Html.Action("GetUserData", "Account")
     </div>
 </div>

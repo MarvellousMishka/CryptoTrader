@@ -1,0 +1,92 @@
+﻿@model LAP_PowerMining.Models.ViewModels.Account.VMUserData
+
+
+<form id="userDataForm" method="post" novalidate="novalidate">
+    <h2>Personal Data</h2>
+    @Html.AntiForgeryToken()
+    <div class="text-danger">
+        <strong>
+            @ViewBag.ErrorMessage
+        </strong>
+    </div>
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(model => model.OldPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.OldPassword, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.OldPassword, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.NewPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.NewPassword, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NewPassword, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ConfirmNewPassword, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.ConfirmNewPassword, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ConfirmNewPassword, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+</form>
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <button onclick="submitUserData()" class="btn btn-success">
+            Save
+        </button>
+    </div>
+    <div class="text-info">
+        <strong>
+            @ViewBag.UserDataMessage
+        </strong>
+    </div>
+</div>
+
+<script>
+    function submitUserData() {
+        $.ajax({
+            type: 'post',
+            url: '/Account/EditUserData',
+            data: {
+                OldPassword: $('#OldPassword').val(),
+                NewPassword: $('#NewPassword').val(),
+                ConfirmNewPassword: $('#ConfirmNewPassword').val(),
+                FirstName: $('#FirstName').val(),
+                LastName: $('#LastName').val()
+            },
+            success: function (data) {
+                $('#loader').dialog('close');
+                $('#userDataContainer').html('');
+                $('#userDataContainer').html(data);
+            },
+            error: function (data) {
+                console.log(data);
+                $('#loader').dialog('close');
+            },
+            beforeSend: function (xhr) {
+                $('#loader').dialog('open');
+            }
+        });
+    }
+</script>

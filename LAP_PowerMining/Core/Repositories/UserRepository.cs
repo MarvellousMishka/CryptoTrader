@@ -12,7 +12,7 @@ namespace LAP_PowerMining.Core.Repositories
 {
     public class UserRepository
     {
-        public bool LogInUser(VMLogin loginInfo)
+        public bool CheckLogin(VMLogin loginInfo)
         {
             bool result = false;
             using (var db = new LocalDbEntities2())
@@ -76,7 +76,6 @@ namespace LAP_PowerMining.Core.Repositories
             }
             return result;
         }
-
         public List<string> GetRoles(string email)
         {
             List<string> result = new List<string>();
@@ -93,6 +92,63 @@ namespace LAP_PowerMining.Core.Repositories
                         result = new List<string> { UserRoles.User.ToString() };
                         break;
                 }
+            }
+            return result;
+        }
+        public VMAddress GetAddress(string email)
+        {
+            VMAddress result = null;
+            using (var db = new LocalDbEntities2())
+            {
+                var dbAddress = db.Address.Where(a => a.User.email == email).FirstOrDefault();
+                result = new VMAddress
+                {
+                    CityName = dbAddress.City.city1,
+                    CountryIso = dbAddress.City.Country.iso,
+                    CountryName = dbAddress.City.Country.name,
+                    Numbers = dbAddress.numbers,
+                    Street = dbAddress.street,
+                    Zip = dbAddress.City.zip
+                };
+            }
+            return result;
+        }
+        public VMUserData GetUserData(string email)
+        {
+            VMUserData result = null;
+            using (var db = new LocalDbEntities2())
+            {
+                User dbUser = db.User.Where(u => u.email == email && u.active == true).FirstOrDefault();
+                result = new VMUserData
+                {
+                    FirstName = dbUser.firstname,
+                    LastName = dbUser.lastname
+                };
+            }
+            return result;
+        }
+        public int UpdateUser(VMUserData changedData, string userMail)
+        {
+            int result = -1;
+            using (var db = new LocalDbEntities2())
+            {
+                User dbUser = db.User.Where(u => u.email == userMail && u.active == true).FirstOrDefault();
+
+                if (!string.IsNullOrEmpty(changedData.FirstName))
+                {
+                    dbUser.firstname = changedData.FirstName;
+                }
+                if (!string.IsNullOrEmpty(changedData.LastName))
+                {
+                    dbUser.lastname = changedData.LastName;
+                }
+                if (!string.IsNullOrEmpty(changedData.NewPassword))
+                {
+                    string salt = "";
+                    dbUser.password = HashingHelper.SaltAndHashPassword(changedData.NewPassword, out salt);
+                    dbUser.salt = salt;
+                }
+                db.SaveChanges();
             }
             return result;
         }

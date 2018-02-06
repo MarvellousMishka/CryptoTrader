@@ -13,6 +13,8 @@ namespace LAP_PowerMining.Controllers
 {
     public class AccountController : MyBaseController
     {
+        #region GET METHODS
+        [HttpGet]
         [Authorize]
         public ActionResult Index()
         {
@@ -28,6 +30,7 @@ namespace LAP_PowerMining.Controllers
             }
             return View();
         }
+        [HttpGet]
         [Authorize]
         public ActionResult Logout()
         {
@@ -35,6 +38,36 @@ namespace LAP_PowerMining.Controllers
             AccountService.LogOutUser();
             return RedirectToAction("Index", "Home");
         }
+        [HttpGet]
+        [Authorize]
+        public ActionResult Verification()
+        {
+
+            return View("Verification");
+        }
+        [HttpGet]
+        [Authorize]
+        public ActionResult PersonalData()
+        {
+            return View();
+        }
+        [HttpGet]
+        [Authorize]
+        public ActionResult GetAddress()
+        {
+            VMAddress model = AddressService.GetAddress(User.Identity.Name);
+            return PartialView("_AddressForm", model);
+        }
+        [HttpGet]
+        [Authorize]
+        public ActionResult GetUserData()
+        {
+            VMUserData model = AccountService.GetUserData(User.Identity.Name);
+            return PartialView("_UserDataForm", model);
+        }
+        #endregion
+
+        #region POST METHODS
         [HttpPost]
         public ActionResult Login(VMLogin loginInfo)
         {
@@ -79,20 +112,8 @@ namespace LAP_PowerMining.Controllers
             }
             return PartialView("_RegisterForm", registInfo);
         }
-        [Authorize]
-        public ActionResult Verification()
-        {
-
-            return View("Verification");
-        }
-        [HttpGet]
-        [Authorize]
-        public ActionResult PersonalData()
-        {
-            return View();
-        }
-        [Authorize]
         [HttpPost]
+        [Authorize]
         public ActionResult EditAddress(VMAddress addressData)
         {
             addressData.UserEmail = User.Identity.Name;
@@ -113,8 +134,22 @@ namespace LAP_PowerMining.Controllers
 
             return PartialView("_AddressForm", addressData);
         }
+        [HttpPost]
+        [Authorize]
+        public ActionResult EditUserData(VMUserData userData)
+        {
+            int result = -1;
+            if (ModelState.IsValid)
+            {
+                result = AccountService.UpdateUser(userData, User.Identity.Name);
+            }
 
-        #region Autocompletes
+
+            return PartialView("_UserDataForm", userData);
+        }
+        #endregion
+
+        #region AUTOCOMPLETES
         [HttpPost]
         [Authorize]
         public JsonResult AutoCompleteCities(string searchTerm)

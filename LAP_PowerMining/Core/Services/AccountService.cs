@@ -20,11 +20,12 @@ namespace LAP_PowerMining.Core.Services
         }
         public static bool LogInUser(VMLogin loginInfo)
         {
-            bool result = context.LogInUser(loginInfo);
+            bool result = context.CheckLogin(loginInfo);
             if (result == true)
             {
                 LoginHelper.LoginUser(loginInfo);
             }
+            loginInfo.Password = "";
             return result;
         }
         public static int RegisterUser(VMRegister registerInfo)
@@ -45,11 +46,42 @@ namespace LAP_PowerMining.Core.Services
             }
             return result;
         }
-        public static int UpdateUser(VMRegister userInfo)
+        public static int UpdateUser(VMUserData userData, string userMail)
         {
             int result = -1;
+            int tempResult = -1;
+            // Gathers all data which are allowed to be changed
+            VMUserData dataValidToChange = new VMUserData();
+
+            if (!string.IsNullOrEmpty(userData.FirstName)) { dataValidToChange.FirstName = userData.FirstName; }
+            if (!string.IsNullOrEmpty(userData.LastName)) { dataValidToChange.LastName = userData.LastName; }
+
+            if (!string.IsNullOrEmpty(userData.OldPassword) && !string.IsNullOrEmpty(userData.NewPassword) && !string.IsNullOrEmpty(userData.ConfirmNewPassword))
+            {
+                VMLogin testOldPw = new VMLogin
+                {
+                    Email = userMail,
+                    Password = userData.OldPassword
+                };
+                if (userData.NewPassword == userData.ConfirmNewPassword)
+                {
+                    if (context.CheckLogin(testOldPw))
+                    {
+                        dataValidToChange.NewPassword = userData.NewPassword;
+                    }
+                }
+            }
+            tempResult = context.UpdateUser(dataValidToChange, userMail);
             
+            userData.ConfirmNewPassword = "";
+            userData.NewPassword = "";
+            userData.OldPassword = "";
             return result;
+        }
+
+        public static VMUserData GetUserData(string email)
+        {
+            return context.GetUserData(email);
         }
     }
 }

@@ -112,21 +112,23 @@ namespace LAP_PowerMining.Core.Repositories
         {
             VMAddress result = new VMAddress();
             Address address = new Address();
+            //City city = new City();
+            //Country country = new Country();
             using (var db = new LocalDbEntities2())
             {
                 address = db.Address.Where(a => a.User.email == email).FirstOrDefault();
-            }
-            if (address != null)
-            {
-                result = new VMAddress
+                if (address != null)
                 {
-                    CityName = address.City.city1,
-                    CountryIso = address.City.Country.iso,
-                    CountryName = address.City.Country.name,
-                    Numbers = address.numbers,
-                    Street = address.street,
-                    Zip = address.City.zip
-                };
+                    result = new VMAddress
+                    {
+                        CityName = address.City.city1,
+                        CountryIso = address.City.Country.iso,
+                        CountryName = address.City.Country.name,
+                        Numbers = address.numbers,
+                        Street = address.street,
+                        Zip = address.City.zip
+                    };
+                }
             }
             return result;
         }

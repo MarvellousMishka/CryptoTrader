@@ -167,6 +167,7 @@
     <Compile Include="Core\Controllers\MyBaseController.cs" />
     <Compile Include="Core\Enums\RegisterType.cs" />
     <Compile Include="Core\Enums\TickerDataType.cs" />
+    <Compile Include="Core\Enums\UserDataResult.cs" />
     <Compile Include="Core\Enums\UserRoles.cs" />
     <Compile Include="Core\Enums\ToastType.cs" />
     <Compile Include="Core\Authorization\CustomRoleProvider.cs" />
@@ -247,6 +248,7 @@
     <Compile Include="Models\ViewModels\Account\VMCity.cs" />
     <Compile Include="Models\ViewModels\Account\VMLogin.cs" />
     <Compile Include="Models\ViewModels\Account\VMMail.cs" />
+    <Compile Include="Models\ViewModels\Account\VMUserData.cs" />
     <Compile Include="Models\ViewModels\Account\VMRegister.cs" />
     <Compile Include="Models\ViewModels\Account\VMUpload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -257,6 +259,7 @@
     <Content Include="Views\Wallet\Index.cshtml" />
     <Content Include="Views\Account\PersonalData.cshtml" />
     <Content Include="Views\Account\_AddressForm.cshtml" />
+    <Content Include="Views\Account\_UserDataForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\LocalDb.mdf" />

@@ -9,6 +9,11 @@ namespace LAP_PowerMining.Core.Services
 {
     public class AddressService
     {
+
+        public static VMAddress GetAddress(string email)
+        {
+            return AddressRepository.GetAddress(email);
+        }
         public static int UpdateAddress(VMAddress addressInfo)
         {
             int result = -1;
